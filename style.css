@@ -1,0 +1,98 @@
+body{
+  background-color: #FAFCFD;
+}
+#cont{
+  margin-top: 50px;
+  border: 1px solid rgb(126, 132, 139, 0.1);
+  border-radius: 5px;
+  box-shadow: rgba(36, 37, 38, 0.04) 0px 4px 8px 2px;
+}
+#cover {
+  background-image: linear-gradient(0deg,rgba(116, 118, 121, 0.35) 1%,rgba(116, 118, 121, 0.35) 100%), url("img/image.png");
+  background-size: cover;
+  background-position-y: -160px;
+}
+.form-logo {
+  background-color: #ff5160;
+  position: absolute;
+  color: #fff;
+  top: -30px;
+  padding: 6px 18px;
+  font-size: 30px;
+  border-radius: 4px;
+  box-shadow: rgba(36, 37, 38, 0.16) 2px 4px 8px 2px;
+}
+input[type=password], input[type=email], input[type=text] {
+  width: 100%;
+  padding: 22px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-width: 2px;
+}
+.form-input {
+  display: flex;
+  position: relative;
+}
+.form-input input:focus {
+  border-color: #ff5160;
+  outline: none !important;
+  box-shadow: none;
+}
+.form-label {
+  position: absolute;
+  left: 8px;
+  bottom: 20px;
+  transform-origin: bottom left;
+  transition: transform 150ms cubic-bezier(0.4,0,0.2,1);
+  color: #7d838a;
+  font-size: 16px;
+  font-weight: 400;
+  box-sizing: border-box;
+  background: #fff;
+  max-width: calc(100% - (2*8px));
+  padding: 0 8px;
+  white-space: nowrap;
+  width: auto;
+  z-index: 1;
+  text-overflow: ellipsis;
+  pointer-events: none;
+}
+.form-input-full .form-label {
+  -webkit-transform: scale(.75) translateY(-37px);
+  transform: scale(.75) translateY(-37px);
+}
+.form-focused .form-label {
+  color: #ff5160;
+}
+.form-icon {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  color: #7d838a;
+  font-size: 18px;
+}
+.form-icon:hover {
+  color: #5f6368;
+}
+.btn-prm {
+  color: #fff;
+  background-color: #ff5160;
+  border-color: #ff5160;
+  text-transform: uppercase;
+  font-size: .85rem;
+  padding: 14px 0;
+  box-shadow: rgba(36, 37, 38, 0.15) 0px 2px 6px 2px;
+}
+.btn-prm:focus, .btn-prm:hover {
+  background-color: #ff3949 !important;
+  border-color: #ff5160 !important;
+  box-shadow: rgba(36, 37, 38, 0.15) 0px 2px 6px 2px !important;
+}
+a {
+  color: #ff5160;
+  text-decoration: underline;
+}
+.custom-control-input:checked~.custom-control-label::before{
+  background-color: #ff5160;
+  border-color: #ff5160;
+}
